@@ -1,0 +1,26 @@
+<html> 
+<head>
+<title> Family Book </title>
+</head>
+<body>
+<center>
+<h1> My Family Book </h1>;
+<img id="book" src="Family Book Cover.png"> <br><br><br><br>
+<button type="button" onclick="changethepic()"> Next>> </button>
+</center>
+</body>
+</html>
+<script>
+var images = ["Family Book Cover.png","Ananya Kurup.png","Priya Kurup.png","Sunil Kurup.png","Shlok Kurup.png"];
+    
+    var i=0;
+    function changethepic(){
+    if (i==5)
+      {
+        i=0
+      };
+    document.getElementById("book").src=images[i]
+    i++
+    };
+    
+</script>
